@@ -13,11 +13,7 @@ const userPattern = /\w/g;
 
 
 
-// AllInputs.push(username);
-// AllInputs.push(email);
-// AllInputs.push(password);
-// AllInputs.push(confirmPass);
-// console.log(AllInputs);
+
 
 const showError = function (input, Msg = '') {
     if (input == username) {
@@ -151,69 +147,6 @@ const succReg = function () {
 btn.addEventListener('click', succReg);
 
 
-//     inputs[1].maxLength = 25;
-//     inputs[1].pattern = re;
-
-//     if (validateEmail(email.value)) {
-//         showSuccesss(email, 'You entered a valid email!');
-
-//     } else {
-//         showError(email, 'You should enter a valid email!');
-//     }
-// }
-
-
-// // Validation of the input fields
-// const verifyUsername = function () {
-//     inputs[0].minLength = 5;
-//     inputs[0].pattern = userPattern;
-
-//     if (username.value === '' || username.value.length < username.minLength || username.pattern === userPattern) {
-//         showError(username, 'It should contain atleast 5 letters and numbers only!');
-//     } else {
-//         showSuccesss(username, 'Your username is valid!');
-
-//     }
-// }
-
-
-// const verifyPassword = function () {
-
-//     inputs[2].minLength = 6;
-
-//     if (password.value === '' || password.value.length < password.minLength) {
-//         showError(password, 'It should contain atleast 6 letters');
-//     } else {
-//         showSuccesss(password, 'Your password is valid!');
-
-//     }
-
-// }
-// const confirmPassword = function () {
-
-//     inputs[3].minLength = 6;
-
-//     if (confirmPass.value === '' || confirmPass.value !== password.value) {
-//         showError(confirmPass, 'The password is not the same');
-//     } else {
-//         showSuccesss(confirmPass, 'Confirmation of the password is successful!');
-//     }
-// }
-
-// const verify = function () {
-//     checkLength(username,5);
-//     checkLength(password,6);
-//     checkLength(confirmPass,6);
-//     validateEmail(email);
-//     checkPass(confirmPass,password);
-//     checkRequired([username,email,password,confirmPass])
-//     // verifyPassword();
-//     // confirmPassword();
-// }
-
-// inputs.forEach(function (input) {
-//     input.required = true;
-// });
 
 
 
