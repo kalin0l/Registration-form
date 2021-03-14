@@ -7,6 +7,7 @@ body {
     justify-items: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 .flex {
     display: flex;
