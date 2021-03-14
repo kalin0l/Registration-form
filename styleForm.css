@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 body {
-    background-color: seashell;
-    justify-content: space-around;
+    flex-direction: column;
+    background: linear-gradient(to left top, seashell,grey);
+    justify-items: center;
     align-items: center;
     height: 100vh;
 }
@@ -46,12 +47,10 @@ input[type="email"] {
     input[type="password"],
     input[type="email"],
     form input[type="button"] {
-
         width: 60%;
         height: 30px;
     }
 }
-
 
 h2 {
     text-align: center;
@@ -73,4 +72,14 @@ span {
 }
 .success .error {
     color: green;
+}
+.welcome {
+    opacity: 0;
+    transition: opacity 0.5s;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    color: darkslateblue;
+    
+    
 }
