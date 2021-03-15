@@ -109,16 +109,19 @@ inputs.forEach(function (input) {
     input.required = true;
 });
 
-
-btn.addEventListener('click', function () {
-    // verifyUsername();
+const validation = function () {
     checkLength(username, 5);
     validateEmail(email);
     checkLength(password, 6);
     checkLength(confirmPass, 6);
     checkPass(confirmPass, password);
     checkPattern(username);
-});
+
+    succReg();
+}
+
+btn.addEventListener('click', validation);
+
 
 // welcome message functionality 
 const form = document.querySelector('form');
@@ -134,12 +137,13 @@ const welcomeFunc = function () {
 
 
 const succReg = function () {
-    if (username.value !== '' && confirmPass !== '')
-        form.style.opacity = 0;
+
+    form.style.opacity = 0;
     regMSG.textContent = `Your registration is complete ${username.value}!`
     regMSG.style.opacity = 1;
 
     setTimeout(welcomeFunc, 1000);
+
 }
 
 
