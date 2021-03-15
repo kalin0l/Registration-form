@@ -4,10 +4,13 @@
 body {
     flex-direction: column;
     background: linear-gradient(to left top, seashell,grey);
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
+}
+.main {
+    
 }
 .flex {
     display: flex;

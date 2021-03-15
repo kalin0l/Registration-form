@@ -116,39 +116,10 @@ const validation = function () {
     checkLength(confirmPass, 6);
     checkPass(confirmPass, password);
     checkPattern(username);
-
-    succReg();
 }
 
 btn.addEventListener('click', validation);
 
-
-// welcome message functionality 
-const form = document.querySelector('form');
-const regMSG = document.querySelector('.welcome');
-const welcMSG = document.querySelector('.msg');
-
-const welcomeFunc = function () {
-    regMSG.style.opacity = 0;
-    welcMSG.textContent = `Welcome!`;
-    welcMSG.style.opacity = 1;
-
-}
-
-
-const succReg = function () {
-
-    form.style.opacity = 0;
-    regMSG.textContent = `Your registration is complete ${username.value}!`
-    regMSG.style.opacity = 1;
-
-    setTimeout(welcomeFunc, 1000);
-
-}
-
-
-
-btn.addEventListener('click', succReg);
 
 
 
